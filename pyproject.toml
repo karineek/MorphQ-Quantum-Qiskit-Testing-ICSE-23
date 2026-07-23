@@ -23,12 +23,15 @@ dependencies = [
     "pydantic",
     "pytest",
     "PyYAML",
-    "qiskit==1.2.4",
-    "qiskit-aer==0.15.1",
-    "qiskit-ibm-runtime==0.29.0",
+    "qiskit==2.3.0",
+    "qiskit-aer>=0.17",
+    "qiskit-ibm-runtime>=0.40",
     "rustworkx",
     "scipy",
     "seaborn",
     "termcolor",
     "tqdm",
 ]
+
+[tool.setuptools]
+packages = ["lib", "lib.mr"]
